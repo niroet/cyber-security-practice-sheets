@@ -51,16 +51,19 @@
       cite: "248"),
     item("g", 2,
       [Name one argument for and one argument against the application of the security principle “Open Design”.],
-      [*Open Design* = share implementation details with others, even the attacker. *For:* it enables *reviews and white-box analyses* and re-use of designs (cf. *Kerckhoffs*: a cipher should not require secrecy; *Linus' Law*: “given enough eyeballs, all bugs are shallow”). *Against:* the “many eyeballs” claim is contested — Glass lists it as *Fallacy 8*, and bugs can survive long in popular open code (e.g. *Heartbleed* in OpenSSL: introduced 2012, found 2014).],
+      [*Open Design* = share implementation details with others, even the attacker.\
+      *For:* it enables *reviews and white-box analyses* and re-use of designs (cf. *Kerckhoffs*: a cipher should not require secrecy; *Linus' Law*: “given enough eyeballs, all bugs are shallow”).\
+      *Against:* the “many eyeballs” claim is contested — Glass lists it as *Fallacy 8*, and bugs can survive long in popular open code (e.g. *Heartbleed* in OpenSSL: introduced 2012, found 2014).],
       graded: [one pro (review/white-box, Kerckhoffs/Linus' Law) + one con (eyeballs fallacy / Heartbleed longevity).],
       cite: "240, 264, 265"),
     item("h", 3,
-      [Is it possible to satisfy the security attribute “Non-repudiation” without “Accountability” in the same activity? Justify your answer using the definitions of the two terms.],
-      [*No.* *Non-repudiation* protects against an individual *falsely denying having performed a particular action*, i.e. one must be able to *determine whether a given individual took that action*. *Accountability* is the property of *being able to trace activities to the individuals* responsible. Determining that a specific person did the action (non-repudiation) already *requires tracing the action to that individual* — which is exactly accountability. So non-repudiation *presupposes* accountability and cannot be satisfied without it in the same activity.],
+      [Is it possible to satisfy the security attribute “Non-repudiation” *without* “Accountability” in the same activity? Justify your answer using the definitions of the two terms.],
+      [*No.* *Non-repudiation* protects against an individual *falsely denying having performed a particular action*, i.e. one must be able to *determine whether a given individual took that action*. *Accountability* is the property of *being able to trace activities to the individuals* responsible.\
+      Determining that a specific person did the action (non-repudiation) already *requires tracing the action to that individual* — which is exactly accountability. So non-repudiation *presupposes* accountability and cannot be satisfied without it in the same activity.],
       graded: [No + reasoning: non-repudiation requires attributing the action to a specific individual, which is what accountability provides, so it presupposes accountability.],
       cite: "224, 223"),
     item("i", 3,
-      [Is it possible to satisfy both the security attribute “Privacy” and “Anonymity” for the same data at the same time? Justify your answer using the definitions of the two terms.],
+      [Is it possible to satisfy both the security attribute “Privacy” *and* “Anonymity” for the same data at the same time? Justify your answer using the definitions of the two terms.],
       [*Yes.* *Privacy* is a party's *right to keep control over and confidentiality of information about itself*; *Anonymity* is the condition that an entity *can be recognized as distinct without enough identity information to link it to a known identity*. They target different aspects and are *complementary*: anonymity removes the *link* to the real identity, while privacy *controls/protects* the data that does exist. Concealing the identity link does not conflict with controlling the data — both can hold at once (e.g. published *grade averages only*, with strict retention limits).],
       graded: [Yes + reasoning: anonymity hides the identity link, privacy controls/protects the data; different aspects, complementary, not mutually exclusive.],
       cite: "218, 219"),
