@@ -24,7 +24,7 @@
     item("d", 3,
       [Evaluate the following from the perspective of German law: while developing a campus app, a student discovers a vulnerability in the university’s API and, to prove it, copies parts of the database with all students’ data to his own laptop.],
       [*Punishable.* By exploiting the vulnerability he *circumvents the access protection* and *obtains access to data not intended for him* (all students’ data) without authorization — this fulfils *§202a StGB (Ausspähen von Daten)*, up to 3 years. He has no pentest contract, so the access is “unbefugt”, and copying the data exceeds what proving the flaw needs. Correct behaviour would be *responsible disclosure* (e.g. via the CCC) *without exfiltrating real data*.],
-      graded: [§202a applies (unauthorized access to specially-protected data not intended for him by overcoming protection); no authorization; copying real data is unnecessary; name responsible disclosure as the lawful alternative.],
+      graded: [§202a applies (unauthorized access to specially-protected data not intended for him by overcoming protection); no authorization; copying real data is unnecessary; (Optional)(name responsible disclosure as the lawful alternative.)],
       cite: "120, 124"),
   ),
 )
