@@ -2,7 +2,7 @@
 
 Foldable, self-correcting practice sheets built from the *Exemplary Exam Questions* in
 `handout_cyber_security.pdf` (Security of Mobile and Web-based Applications, SoSe 2026,
-Prof. Dr. Thomas Hutzelmann, TH Ingolstadt — source slides CC BY 4.0).
+[Prof. Dr. Thomas Hutzelmann](https://github.com/hutzelmann), TH Ingolstadt — source slides CC BY 4.0).
 
 ## What this is
 
