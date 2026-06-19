@@ -21,7 +21,7 @@
       cite: "215, 213"),
     item("c", 1,
       [Give an example of the security principle “Economy of mechanism”.],
-      [*Hardware security modules (HSMs)*, or *Let's Encrypt* SSL certificates — keeping the design as simple and small as possible.],
+      [*Hardware security modules (HSMs)*, or *Let's Encrypt* SSL certificates — keeping the design as simple and small as possible (Optional)(, because they are easier to audit and to integrate).],
       graded: [one valid example (HSMs or Let's Encrypt).],
       cite: "234"),
     item("d", 1,
