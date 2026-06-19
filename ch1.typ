@@ -1,0 +1,30 @@
+#import "template.typ": item
+
+#let ch1 = (
+  chapter: "1",
+  title: "Foundations",
+  tag: "1.6",
+  slide: 138,
+  items: (
+    item("a", 2,
+      [Define the term “(Cyber)Security”.],
+      [Cybersecurity is the *protection of computer systems and networks from attacks by malicious actors* that may result in unauthorized information disclosure, theft of or damage to hardware, software or data, as well as from the disruption or misdirection of the services they provide. It is a *“Not”-property*: assuring the *absence of unwanted functionality*, not an explicitly programmed feature.],
+      graded: [the protection idea + naming the protected goals (data/systems/services) against malicious actors; bonus: security as a “Not”-property.],
+      cite: "109, 112"),
+    item("b", 3,
+      [Both attackers and defenders look for vulnerabilities in applications. Explain why this task is generally easier for attackers than for defenders.],
+      [The *defender must find and close every single weakness* — proving the *absence* of unwanted behaviour requires checking *all* possible system interactions. The *attacker only needs to find and exploit one single vulnerability*. The work is therefore asymmetric: complete coverage vs. a single hole.],
+      graded: [the asymmetry — defender must cover *all* weaknesses, attacker needs only *one*; absence of unwanted behaviour is hard to prove.],
+      cite: "112, 113"),
+    item("c", 2,
+      [Explain briefly why the attacks demonstrated and carried out in this course are not punishable under German law.],
+      [The attacks are performed *with authorization* on systems provided for exactly this purpose (your own machine / the supplied CTF containers), so access is *not “unbefugt”* (unauthorized) as required by §202a StGB. In line with Germany’s highest courts, the *purpose* is teaching/training, research and curiosity — not the criminal purpose the “hacker paragraph” (§202c) targets.],
+      graded: [authorized access on provided/own systems (not “unbefugt”) + legitimate purpose (teaching/research) recognised by the courts.],
+      cite: "120, 123"),
+    item("d", 3,
+      [Evaluate the following from the perspective of German law: while developing a campus app, a student discovers a vulnerability in the university’s API and, to prove it, copies parts of the database with all students’ data to his own laptop.],
+      [*Punishable.* By exploiting the vulnerability he *circumvents the access protection* and *obtains access to data not intended for him* (all students’ data) without authorization — this fulfils *§202a StGB (Ausspähen von Daten)*, up to 3 years. He has no pentest contract, so the access is “unbefugt”, and copying the data exceeds what proving the flaw needs. Correct behaviour would be *responsible disclosure* (e.g. via the CCC) *without exfiltrating real data*.],
+      graded: [§202a applies (unauthorized access to specially-protected data not intended for him by overcoming protection); no authorization; copying real data is unnecessary; name responsible disclosure as the lawful alternative.],
+      cite: "120, 124"),
+  ),
+)

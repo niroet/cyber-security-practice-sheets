@@ -1,0 +1,30 @@
+#import "template.typ": item
+
+#let ch4 = (
+  chapter: "4",
+  title: "Empirical Security Research",
+  tag: "4.5",
+  slide: 464,
+  items: (
+    item("a", 2,
+      [What are the benefits of recording vulnerabilities in a central, public database using unique identifiers? Name two aspects.],
+      [Using a central public database like *`CVE`* with a *globally unique identifier* per vulnerability gives, e.g.: (1) *unambiguous reference* — everyone (vendors, CNAs, tools, researchers) can talk about exactly the same flaw without confusion, even across versions/products. (2) *Collect, enumerate and share knowledge* — a continuously growing, public record of known, documented and disclosed security bugs that anyone can *search and aggregate* (e.g. count CVEs per product, track growth over years). It also *enables a concrete reaction*: the entry names the affected software/version so users can *patch*, and it can be *linked* to a weakness (`CWE`) and a risk score (`CVSS`).],
+      graded: [two distinct benefits, e.g. unique/unambiguous reference shared by all parties + public collection enabling search/aggregation/statistics; bonus: names affected version so one can patch.],
+      cite: "408, 410, 415"),
+    item("b", 2,
+      [Why is it important to also collect weaknesses in a central, public vulnerability database and to link all registered vulnerabilities to one such weakness? Name two reasons.],
+      [A *vulnerability* (`CVE`) is one concrete, exploitable instance in a specific version; a *weakness* (`CWE`) is the *underlying type/class* — the condition that *causes* vulnerabilities. Collecting weaknesses and linking each vulnerability to its weakness gives, e.g.: (1) it *describes the common root cause* of many otherwise separate CVEs, so you understand *why* the flaw happens, not just where. (2) It enables a *preventive, long-term reaction* — *awareness and training* to avoid the weakness in the future (a patch only fixes the single instance). It also turns the data into a *fixed, stable, organised list* you can *aggregate and rank* (e.g. count how often a CWE appears across CVEs → CWE Top 25).],
+      graded: [two distinct reasons, e.g. captures the shared root cause/origin of many CVEs + enables prevention via awareness/training (vs. only patching one instance); bonus: stable list allows aggregation/ranking.],
+      cite: "407, 409, 410"),
+    item("c", 2,
+      [What are the benefits of risk assessment (e.g., with CVSS) when dealing with vulnerabilities? Name two aspects.],
+      [Risk assessment turns `Risk = Impact × Likelihood` into a comparable measure; *`CVSS`* expresses this as a *quantitative base score 0–10* combining *Exploitability* (≈ likelihood) and *Impact*. Benefits, e.g.: (1) *Prioritisation* — a comparable score lets you decide where to spend limited resources (e.g. low risk → accept, high risk → fix) instead of treating all vulnerabilities equally. (2) *Standardised, transparent communication* — a shared metric and *vector string* lets different parties consistently quantify and justify severity (and refine it per organisation via temporal/environmental metrics). This counters both over- and under-estimating risk, which otherwise wastes resources or leaves painful residual risk.],
+      graded: [two distinct benefits, e.g. comparable score enables prioritisation / resource allocation (accept vs. fix) + standardised, justifiable severity shared across parties; bonus: avoids over-/under-estimation.],
+      cite: "420, 426, 430"),
+    item("d", 3,
+      [Why do the first ten entries of the CWE Top 25 differ from the entries of the OWASP Top 10 from the same year? Name three reasons.],
+      [Although the two lists overlap strongly, they are *built differently*: (1) *Different scope* — the *OWASP Top 10 covers only web applications*, while the *CWE Top 25 is more general* and also includes *binary/memory vulnerabilities* (e.g. buffer overflows). (2) *Different data sources* — the CWE Top 25 is computed from *openly disclosed CVEs* in public databases, whereas the OWASP Top 10 also uses *non-publicly disclosed / proprietary data submitted by companies* plus an *expert survey* for future trends. (3) *Different methodology* — CWE Top 25 ranks by `Danger Score = Frequency × Severity` (avg `CVSS`) over mapped CVEs, while OWASP groups/refines by human experts and *differentiates the tooling used for discovery*; the *ranking thus differs per list and per version*. In short: *different definitions of scope lead to different results.*],
+      graded: [three distinct reasons, e.g. scope (web-only vs. general incl. binary) + data source (public CVEs vs. private submissions + survey) + methodology/abstraction (frequency×severity vs. expert grouping, tooling differentiation).],
+      cite: "444, 446, 453"),
+  ),
+)

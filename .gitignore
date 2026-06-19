@@ -1,0 +1,4 @@
+# Scratch renders used for verification
+*.png
+# Typst build cache
+.typst/
