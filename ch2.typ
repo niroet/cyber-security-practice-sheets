@@ -16,7 +16,7 @@
       cite: "216, 213"),
     item("b", 2,
       [Define the security attribute “Integrity” for data and systems.],
-      [*Integrity* means *guarding against improper modification or destruction* of information, and includes ensuring *non-repudiation* and *authenticity*. It *prevents unintentional alterations*; means include defining who may change what and using *checksums / digital signatures* to detect changes.],
+      [*Integrity* means *guarding against improper modification, addition or destruction* of information, and includes ensuring *non-repudiation* and *authenticity*. It *prevents unintentional or malicious alterations*; means include defining who may change what and using *checksums / digital signatures* to detect changes.],
       graded: [guarding against improper/unintended modification or destruction; includes non-repudiation + authenticity.],
       cite: "215, 213"),
     item("c", 1,
