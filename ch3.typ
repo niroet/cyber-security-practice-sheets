@@ -15,8 +15,9 @@
       graded: [length beats alphabet size for entropy (linear vs. log) + passphrases are long → high entropy; usable/memorable so users do not pick weak predictable patterns crackers expect.],
       cite: "311, 313, 316"),
     item("b", 2,
-      [Name two advantages of *passphrases* (natural-language words) compared to *passwords* (random strings that may include numbers and special characters).],
-      [(1) They are *easier to memorise and to type*, since they use natural-language words a user can actually remember. (2) They are *generally longer*, and length contributes linearly to entropy, so they achieve *higher entropy / are harder to guess* while staying user-friendly.],
+      [*Name two* advantages of *passphrases* (made up of natural language words) compared to *passwords* (random strings that may include numbers and special characters).],
+      [(1) They are *easier to memorise and to type*, since they use natural-language words a user can actually remember.\
+      (2) They are *generally longer*, and length contributes linearly to entropy, so they achieve *higher entropy / are harder to guess* while staying user-friendly.],
       graded: [any two of: easier to remember; easier/faster to type; longer ⇒ more entropy / harder to guess.],
       cite: "316, 311"),
     item("c", 3,
@@ -36,12 +37,17 @@
   items: (
     item("a", 4,
       [Scenario: after a wrong password the login screen shows a large red message: "Warning! `AuthErr\#42`. Contact phone support immediately (Mondays only, 7:00–7:30 a.m.). This error may result in criminal charges!" Below it a single "Agree" button. Name *two* guidelines for user-centric IT security that are violated, and briefly explain each violation.],
-      [*G1 — Understandability (open for all users):* the message `AuthErr\#42` is a *short, cryptic error code* with no plain-language explanation; users are not security experts and cannot understand what went wrong or what to do. *G7 — Fearless system:* threatening "criminal charges!" *uses fear to motivate the user* and makes them anxious, instead of promoting a positive, cooperative attitude. (Also defensible: *G8 — educated reaction on user errors* — a cryptic message with no healing action and only an "Agree" button gives no step-by-step guidance for the simple error of mistyping a password.)],
+      [Violated:\
+      *G1 — Understandability (open for all users):* the message `AuthErr\#42` is a *short, cryptic error code* with no plain-language explanation; users are not security experts and cannot understand what went wrong or what to do.\
+      *G7 — Fearless system:* threatening "criminal charges!" *uses fear to motivate the user* and makes them anxious, instead of promoting a positive, cooperative attitude.\
+      (Also defensible: *G8 — educated reaction on user errors* — a cryptic message with no healing action and only an "Agree" button gives no step-by-step guidance for the simple error of mistyping a password.)],
       graded: [two distinct guidelines named + matched to scenario: G1 (cryptic code, not understandable) and G7 (fear-mongering "criminal charges"); G8 (no helpful guidance/healing on a user error) also accepted.],
       cite: "320, 322, 329, 330"),
     item("b", 4,
       [Scenario: opening `https://example.org` the browser shows only a red box "Warning! `TLS Error \#13`." — no other buttons or controls. Refer to a violated guideline for user-centric IT security, explain why it is violated, and give a specific proposal to fix it.],
-      [Violated: *G5 — Only informed decisions.* The user is *given no information* (just a cryptic code) and *no way to act* — yet is effectively forced to abandon the task without understanding the risk; the system neither provides the necessary information nor lets the user make an informed choice. *(G1 understandability is likewise violated by the cryptic code.)* *Proposal:* follow the slide's example of *browser certificate warnings* — explain in plain language what is wrong (e.g. the site's TLS certificate could not be verified, so the connection may be insecure) *and* offer real options: a "Go back to safety" button and an "Advanced / proceed anyway" option, so the user can make an informed decision.],
+      [Violated:\
+      *G5 — Only informed decisions.* The user is *given no information* (just a cryptic code) and *no way to act* — yet is effectively forced to abandon the task without understanding the risk; the system neither provides the necessary information nor lets the user make an informed choice.\
+      *(G1 understandability is likewise violated by the cryptic code.)* *Proposal:* follow the slide's example of *browser certificate warnings* — explain in plain language what is wrong (e.g. the site's TLS certificate could not be verified, so the connection may be insecure) *and* offer real options: a "Go back to safety" button and an "Advanced / proceed anyway" option, so the user can make an informed decision.],
       graded: [name G5 (no information + no possible decision) [G1 acceptable too]; concrete fix = plain-language explanation of the risk plus actionable buttons (back / proceed), like browser certificate warnings.],
       cite: "320, 326, 327"),
   ),
