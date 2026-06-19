@@ -9,7 +9,9 @@
   items: (
     item("a", 3,
       [Explain why using readable *passphrases* consisting only of lowercase letters is generally considered a better alternative to passwords that contain a random mix of letters, numbers, and special characters.],
-      [Entropy grows *logarithmically with the alphabet size, but linearly with the length* (`H(ω) = n · log₂|Ω|`). Adding character classes only enlarges the alphabet a little, whereas a long passphrase wins many characters of length — so a long lowercase phrase reaches *more entropy* than a short mixed password. It is also *memorable and easy to type*, so users do not fall back on weak optimisations: the simple "throwing-in-special-characters" passwords are exactly the *patterns/common words* that crackers (e.g. `zxcvbn`) expect, since users are *bad random number generators* and prefer characters they can type. A readable phrase that is long therefore beats a short random string in both real strength and usability.],
+      [Entropy (Unpredictability/Randomness) grows *logarithmically with the alphabet size, but linearly with the length* ($H(omega) = n times log_2abs(Omega)$) with $Omega$ being the alphabet size and $n$ the length of the password.\
+      Adding uppercase letters, digits, or symbols only increases the alphabet, whereas increasing length provides a much larger gain in entropy. Consequently, a long lowercase passphrase can be *stronger* than a short password that mixes character classes.\
+      It is also *memorable and easy to type*, so users do not fall back on weak optimisations: the simple "throwing-in-special-characters" passwords are exactly the *patterns/common words* that crackers (e.g. `zxcvbn`) expect, since users are *bad random number generators* and prefer characters they can type. A readable phrase that is long therefore beats a short random string in both real strength and usability.],
       graded: [length beats alphabet size for entropy (linear vs. log) + passphrases are long → high entropy; usable/memorable so users do not pick weak predictable patterns crackers expect.],
       cite: "311, 313, 316"),
     item("b", 2,
