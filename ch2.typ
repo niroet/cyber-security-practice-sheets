@@ -46,8 +46,6 @@
   items: (
     item("f", 2,
       [Define the security principle “Psychological Acceptability”.],
-      [*Match the security mechanism to the user's mental image.* Rationale: we want users to actually *use and prefer secure systems*; otherwise legitimate users *work around* the security measures to get their task done.],
-      graded: [fit mechanism to user's mental model; else users circumvent it.],
       cite: "248"),
     item("g", 2,
       [Name one argument for and one argument against the application of the security principle “Open Design”.],
