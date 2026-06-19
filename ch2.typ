@@ -51,7 +51,9 @@
       cite: "248"),
     item("g", 2,
       [Name one argument for and one argument against the application of the security principle “Open Design”.],
-      [*Open Design* = share implementation details with others, even the attacker. *For:* it enables *reviews and white-box analyses* and re-use of designs (cf. *Kerckhoffs*: a cipher should not require secrecy; *Linus' Law*: “given enough eyeballs, all bugs are shallow”). *Against:* the “many eyeballs” claim is contested — Glass lists it as *Fallacy 8*, and bugs can survive long in popular open code (e.g. *Heartbleed* in OpenSSL: introduced 2012, found 2014).],
+      [*Open Design* = share implementation details with others, even the attacker.\
+      *For:* it enables *reviews and white-box analyses* and re-use of designs (cf. *Kerckhoffs*: a cipher should not require secrecy; *Linus' Law*: “given enough eyeballs, all bugs are shallow”).\
+      *Against:* the “many eyeballs” claim is contested — Glass lists it as *Fallacy 8*, and bugs can survive long in popular open code (e.g. *Heartbleed* in OpenSSL: introduced 2012, found 2014).],
       graded: [one pro (review/white-box, Kerckhoffs/Linus' Law) + one con (eyeballs fallacy / Heartbleed longevity).],
       cite: "240, 264, 265"),
     item("h", 3,
