@@ -55,7 +55,7 @@ typst compile main.typ practice_sheets.pdf
 
 ## License & attribution
 
-The exam questions are © Prof. Dr. Thomas Hutzelmann (TH Ingolstadt), from his lecture
+The exam questions are © [Prof. Dr. Thomas Hutzelmann (TH Ingolstadt)](https://github.com/hutzelmann), from his lecture
 *Security of Mobile and Web-based Applications*, published under **CC BY 4.0**. This
 repository is an unofficial derivative study aid (his questions + added answers and
 typesetting). It is released under the same **CC BY 4.0** license. See [LICENSE.md](LICENSE.md)
